@@ -1,2 +1,5 @@
-com/materialescolar/pi/model/Usuario.class
+com/materialescolar/pi/controller/UserController.class
+com/materialescolar/pi/service/UserService.class
+com/materialescolar/pi/model/UserModel.class
+com/materialescolar/pi/repository/UserRepository.class
 com/materialescolar/pi/PiApplication.class
