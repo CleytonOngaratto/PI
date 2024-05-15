@@ -1,11 +1,8 @@
 package com.materialescolar.pi.controller;
 
-import com.materialescolar.pi.model.ProdutosModel;
-import com.materialescolar.pi.exception.ResourceNotFoundException;
+import com.materialescolar.pi.model.ProductModel;
 
-import com.materialescolar.pi.model.UserModel;
-import com.materialescolar.pi.repository.ProdutosRepository;
-import com.materialescolar.pi.repository.UserRepository;
+import com.materialescolar.pi.repository.ProductsRepository;
 import com.materialescolar.pi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -16,18 +13,25 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @Controller
-public class ProdutosController {
+public class ProductsController {
 
     @Autowired
     private UserService userService;
 
     @Autowired
-    private ProdutosRepository produtosRepository;
+    private ProductsRepository produtosRepository;
+
+
+    @GetMapping("/products")
+    public String usuario_page(){
+        return "products/index";
+    }
+
 
     @GetMapping("/getAllProdutos")
-    public ResponseEntity<List<ProdutosModel>> getAllProdutos() {
+    public ResponseEntity<List<ProductModel>> getAllProdutos() {
         try {
-            List<ProdutosModel> listaDeProdutos = new ArrayList<>();
+            List<ProductModel> listaDeProdutos = new ArrayList<>();
             produtosRepository.findAll().forEach(listaDeProdutos::add);
 
             if (listaDeProdutos.isEmpty()) {
@@ -41,8 +45,8 @@ public class ProdutosController {
     }
 
     @GetMapping("/getProdutoById/{id}")
-    public ResponseEntity<ProdutosModel> getProdutoById(@PathVariable Long id) {
-        Optional<ProdutosModel> produtoObj = produtosRepository.findById(id);
+    public ResponseEntity<ProductModel> getProdutoById(@PathVariable Long id) {
+        Optional<ProductModel> produtoObj = produtosRepository.findById(id);
         if (produtoObj.isPresent()) {
             return new ResponseEntity<>(produtoObj.get(), HttpStatus.OK);
         } else {
@@ -51,9 +55,9 @@ public class ProdutosController {
     }
 
     @PostMapping("/addProduto")
-    public ResponseEntity<ProdutosModel> addBook(@RequestBody ProdutosModel produto) {
+    public ResponseEntity<ProductModel> addBook(@RequestBody ProductModel produto) {
         try {
-            ProdutosModel produtoObj = produtosRepository.save(produto);
+            ProductModel produtoObj = produtosRepository.save(produto);
             return new ResponseEntity<>(produtoObj, HttpStatus.CREATED);
         } catch (Exception e) {
             return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
@@ -61,16 +65,16 @@ public class ProdutosController {
     }
 
     @PostMapping("/updateProduto/{id}")
-    public ResponseEntity<ProdutosModel> updateBook(@PathVariable Long id, @RequestBody ProdutosModel produto) {
+    public ResponseEntity<ProductModel> updateBook(@PathVariable Long id, @RequestBody ProductModel produto) {
         try {
-            Optional<ProdutosModel> produtoData = produtosRepository.findById(id);
+            Optional<ProductModel> produtoData = produtosRepository.findById(id);
             if (produtoData.isPresent()) {
-                ProdutosModel updatedProdutoData = produtoData.get();
+                ProductModel updatedProdutoData = produtoData.get();
                 updatedProdutoData.setNome(produto.getNome());
                 updatedProdutoData.setValor(produto.getValor());
                 updatedProdutoData.setDescricao(produto.getDescricao());
 
-                ProdutosModel produtoObj = produtosRepository.save(updatedProdutoData);
+                ProductModel produtoObj = produtosRepository.save(updatedProdutoData);
                 return new ResponseEntity<>(produtoObj, HttpStatus.CREATED);
             }
 

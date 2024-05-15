@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.materialescolar</groupId>
 	<artifactId>pi</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>pi</name>
 	<description>Project for PI</description>
 	<properties>
