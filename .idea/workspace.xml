@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50225dce-af8b-401d-9743-aa56006d0c4d" name="Changes" comment="feat(create and delete product):">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="50225dce-af8b-401d-9743-aa56006d0c4d" name="Changes" comment="feat(edit product):">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/model/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/repository/UserRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,13 +95,14 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/cleyton/IdeaProjects/pi/src/main/resources/templates/products",
+    "last_opened_file_path": "/home/cleyton/IdeaProjects/pi/src/main/resources/templates/login",
     "settings.build.tools.auto.reload": "ALL",
     "settings.editor.selected.configurable": "build.tools"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/login" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/products" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
@@ -110,6 +111,9 @@
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/home" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.materialescolar.pi.controller" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -210,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715988612240</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(edit product):">
+      <option name="closed" value="true" />
+      <created>1716062944826</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716062944826</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,7 +241,8 @@
     <MESSAGE value="feat(crud on h2 database):" />
     <MESSAGE value="feat(adjusts models and repository):" />
     <MESSAGE value="feat(create and delete product):" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(create and delete product):" />
+    <MESSAGE value="feat(edit product):" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(edit product):" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -242,6 +255,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/ProductsController.java</url>
           <line>39</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/LoginController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
