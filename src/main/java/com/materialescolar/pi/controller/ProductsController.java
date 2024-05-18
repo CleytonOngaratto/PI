@@ -43,11 +43,48 @@ public class ProductsController {
     }
 
     @GetMapping("/products/{id}/excluir")
-    public String excluir(@PathVariable Long id){
+    public String delete(@PathVariable Long id){
         repo.deleteById(id);
 
         return "redirect:/products";
     }
+
+    @GetMapping("/products/{id}")
+    public String search(@PathVariable Long id, Model model){
+        Optional<Product> prod = repo.findById(id);
+        if (prod.isPresent()) {
+            model.addAttribute("product", prod.get());
+            return "products/edit";
+        } else {
+            model.addAttribute("error", "Product not found");
+            return "redirect:/products"; // Or another error page
+        }
+    }
+
+//    @PostMapping("/products/{id}/modify")
+//    public String modify(@PathVariable Long id, Product product){
+//        Optional<Product> prod = repo.findById(id);
+//        if (prod.isPresent()) {
+//            return "products/edit";
+//        } else {
+//            return "redirect:/products"; // Or another error page
+//        }
+//    }
+
+    @PostMapping("/products/{id}/update")
+    public String update(@PathVariable Long id, @ModelAttribute Product product) {
+        Optional<Product> existingProduct = repo.findById(id);
+        if (existingProduct.isPresent()) {
+            Product prodToUpdate = existingProduct.get();
+            prodToUpdate.setNome(product.getNome());
+            prodToUpdate.setValor(product.getValor());
+            prodToUpdate.setDescricao(product.getDescricao());
+            repo.save(prodToUpdate);
+        }
+        return "redirect:/products";
+    }
+
+
 
 
 //
