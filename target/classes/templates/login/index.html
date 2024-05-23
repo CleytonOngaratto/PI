@@ -1,34 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Editar Produto</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Login </title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://mymaplist.com/js/vendor/TweenLite.min.js"></script>
+    <style>
+        body, html {
+            height: 100%;
+        }
+
+        .bg-custom {
+            background: url('https://s2-g1.glbimg.com/e8qJJWa51SFAW9N77e3-7Q-y50s=/0x0:7144x4343/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/z/3/M95tHCS6mVKYJ4Nz52kw/colorful-school-supplies-in-the-shopping-basket-on-a-gray-background-with-a-copy-of-the-text-space-a-stack-of-books-with-colorful-covers-the-concept-of-returning-to-school-for-the-new-academic-year.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .vertical-offset-100 {
+            padding-top: 100px;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-    <h2>Editar Produto</h2>
-    <form method="POST" th:action="@{/products/{id}/update(id=${product.id})}" class="container">
-        <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" th:value="${product.nome}" required id="nome" class="form-control" placeholder="Digite o nome do produto">
+<div class="bg-custom">
+    <div class="container">
+        <div class="row vertical-offset-100">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Seja muito bem vindo!</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form accept-charset="UTF-8" role="form" action="/logar" method="POST">
+                                <div class="form-group">
+                                    <input class="form-control" id="username" name="username" type="text" placeholder="Digite o seu username cadastrado">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Password" id="password" name="password" type="password" >
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me"> Lembrar
+                                    </label>
+                                </div>
+                                <div  th:if="${error} != null" th:text="${error}" class="alert alert-danger" role="alert">
+
+                                </div>
+                                <button class="btn btn-lg btn-success btn-block" type="submit" value="Login"> Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="valor">Valor</label>
-            <input type="text" name="valor" th:value="${product.valor}" required id="valor" class="form-control" placeholder="Exemplo: 50,00">
-        </div>
-        <div class="form-group">
-            <label for="descricao">Descrição</label>
-            <textarea id="descricao" name="descricao" class="form-control" placeholder="Detalhe o seu produto." rows="3" th:text="${product.descricao}"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Alterar</button>
-    </form>
+    </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
