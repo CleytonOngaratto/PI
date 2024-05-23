@@ -1,5 +1,8 @@
-/home/cleyton/IdeaProjects/pi/src/main/java/com/materialescolar/pi/controller/UserController.java
-/home/cleyton/IdeaProjects/pi/src/main/java/com/materialescolar/pi/PiApplication.java
-/home/cleyton/IdeaProjects/pi/src/main/java/com/materialescolar/pi/service/UserService.java
-/home/cleyton/IdeaProjects/pi/src/main/java/com/materialescolar/pi/model/UserModel.java
-/home/cleyton/IdeaProjects/pi/src/main/java/com/materialescolar/pi/repository/UserRepository.java
+/home/cleyton/IdeaProjects/PI/src/main/java/com/materialescolar/pi/model/UserModel.java
+/home/cleyton/IdeaProjects/PI/src/main/java/com/materialescolar/pi/repository/ProductsRepository.java
+/home/cleyton/IdeaProjects/PI/src/main/java/com/materialescolar/pi/controller/ProductsController.java
+/home/cleyton/IdeaProjects/PI/src/main/java/com/materialescolar/pi/exception/ResourceNotFoundException.java
+/home/cleyton/IdeaProjects/PI/src/main/java/com/materialescolar/pi/service/UserService.java
+/home/cleyton/IdeaProjects/PI/src/main/java/com/materialescolar/pi/model/Product.java
+/home/cleyton/IdeaProjects/PI/src/main/java/com/materialescolar/pi/repository/UserRepository.java
+/home/cleyton/IdeaProjects/PI/src/main/java/com/materialescolar/pi/PiApplication.java

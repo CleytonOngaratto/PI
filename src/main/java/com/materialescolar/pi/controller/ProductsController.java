@@ -21,6 +21,7 @@ public class ProductsController {
     private ProductsRepository repo;
 
 
+    //mapeamento pro template index home
     @GetMapping("/products")
     public String index(Model model) {
         List<Product> produtos = (List<Product>) repo.findAll();
@@ -29,12 +30,14 @@ public class ProductsController {
         return "products/index";
     }
 
-    @GetMapping("/products/new")
+    //mapeamento pro template de add produto
+    @GetMapping("/products/novo")
     public String novo(){
 
-        return "products/new";
+        return "products/novo";
     }
 
+    //aqui de fato o produto é add ao bdd
     @PostMapping("/products/create")
     public String create(Product product){
         repo.save(product);
