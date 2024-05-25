@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e14ade91-00ec-4c68-8906-889705f0db66" name="Changes" comment="feat: remove no used templates">
+    <list default="true" id="e14ade91-00ec-4c68-8906-889705f0db66" name="Changes" comment="fix: templates">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/novo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/novo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/register/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/register/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/products/novo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products/novo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/register/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/register/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/PiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/PiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,13 +164,30 @@
       <option name="project" value="LOCAL" />
       <updated>1716646342349</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix: templates">
+      <option name="closed" value="true" />
+      <created>1716660270479</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716660270479</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: templates">
+      <option name="closed" value="true" />
+      <created>1716660280574</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716660280574</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: template do crud de produtos" />
     <MESSAGE value="feat: add templates login e cadastro" />
     <MESSAGE value="feat: remove no used templates" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: remove no used templates" />
+    <MESSAGE value="fix: templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: templates" />
   </component>
 </project>
