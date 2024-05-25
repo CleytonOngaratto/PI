@@ -66,45 +66,30 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Seja muito bem vindo!</h3>
-                    </div>
-                    <div class="panel-body">
-                        <form accept-charset="UTF-8" role="form" action="/logar" method="POST">
-                                <div class="form-group">
-                                    <input class="form-control" id="username" name="username" type="text" placeholder="Digite o seu username cadastrado">
-                                </div>
-                                <div class="form-group">
-                                    <input class="form-control" placeholder="Password" id="password" name="password" type="password" >
-                                </div>
-                                <div class="checkbox">
-                                    <label>
-                                        <input name="remember" type="checkbox" value="Remember Me"> Lembrar
-                                    </label>
-                                </div>
-                                <div  th:if="${error} != null" th:text="${error}" class="alert alert-danger" role="alert">
 
-                                </div>
-                                <button class="btn btn-lg btn-success btn-block" type="submit" value="Login"> Login</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
+<div class="container">
+    <h2>Cadastro de Usuário</h2>
+    <form th:action="@{/register/create}" th:object="${userModel}" method="post">
+        <div class="form-group">
+            <label for="username">Nome de Usuário</label>
+            <input type="text" id="username" class="form-control" th:field="*{username}" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" class="form-control" th:field="*{password}" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" th:field="*{email}" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+    <br>
+    <div th:if="${success}">
+        <div class="alert alert-success" role="alert">
+            Cadastro realizado com sucesso!
         </div>
     </div>
 </div>
-
-<footer class="bg-light py-5">
-    <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; 2023 - Company Name</div></div>
-</footer>
-<!-- Bootstrap core JS-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- SimpleLightbox plugin JS-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
-<!-- Core theme JS-->
-<script src="dist/js/scripts.js"></script>
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<!-- * *                               SB Forms JS                               * *-->
-<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 </html>

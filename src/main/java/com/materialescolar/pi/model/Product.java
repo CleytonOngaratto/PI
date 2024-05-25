@@ -17,5 +17,14 @@ public class Product {
     private String nome;
     private String valor;
     private String descricao;
+    @Column(name = "nome_da_loja")
+    private String nomeDaLoja;
+    private String bairro;
+
+    @Column(name = "rua_enumero")
+    private String ruaEnumero;
+
+    private String senhaPraEditarProduto;
+
 
 }

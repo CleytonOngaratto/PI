@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Materiais Escolares</title>
+    <title>Clips e Clicks - Materiais Escolares</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="dist/assets/favicon.ico" />
     <!-- Bootstrap Icons-->
@@ -16,20 +16,20 @@
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="dist/css/styles.css" rel="stylesheet" />
+    <link href="dist/css/styles.css" rel="stylesheet"/>
 </head>
 <body id="page-top">
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top">Materiais Escolares</a>
+        <a class="navbar-brand" href="#page-top">Clips e Clicks - Materiais Online</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#produtos">Produtos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="/register">Cadastre-se</a></li>
+                <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
             </ul>
         </div>
     </div>
@@ -44,29 +44,55 @@
             </div>
             <div class="col-lg-8 align-self-baseline">
                 <p class="text-white-75 mb-5">Aqui você encontra materiais escolares cadastrados pelos lojistas do seu bairro. Convide-o para se inscrever em nosso site e assim conseguir maior alcance e visibilidade de sua loja!</p>
-                <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                <a class="btn btn-primary btn-xl" href="#about">Vamos lá!</a>
             </div>
         </div>
     </div>
 </header>
-<!-- About-->
-<section class="page-section bg-primary" id="about">
+
+<!-- Produtos-->
+<section class="page-section" id="produtos">
     <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 text-center">
-                <h2 class="text-white mt-0">We've got what you need!</h2>
-                <hr class="divider divider-light" />
-                <p class="text-white-75 mb-4">Aqui você encontra materiais escolares cadastrados pelos lojistas do seu bairro. Convide-o para se inscrever em nosso site e assim conseguir maior alcance e visibilidade da sua loja!</p>
-                <a class="btn btn-light btn-xl" href="#services">Get Started!</a>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Services-->
-<section class="page-section" id="services">
-    <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0">At Your Service</h2>
+        <h2 class="text-center mt-0">Lista de Produtos</h2>
         <hr class="divider" />
+        <h4 class="text-center mt-0">Abaixo você encontra a lista de produtos dos lojistas que se cadastraram em nosso site.</h4>
+        <hr>
+
+
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">Nome do Produto</th>
+                <th scope="col">Valor</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Nome da Loja</th>
+                <th scope="col">Bairro</th>
+                <th scope="col">Rua e Número</th>
+            </tr>
+            </thead>
+
+            <tbody>
+
+            <tr th:each="product : ${products}">
+                <td th:text="${product.nome}"></td>
+                <td th:text="${product.valor}"></td>
+                <td th:text="${product.descricao}"></td>
+                <td th:text="${product.nomeDaLoja}"></td>
+                <td th:text="${product.bairro}"></td>
+                <td th:text="${product.ruaEnumero}"></td>
+
+            </tr>
+
+            </tbody>
+        </table>
+
+
+
+
+
+
+
+
         <div class="row gx-4 gx-lg-5">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="mt-5">
@@ -95,6 +121,24 @@
                     <h3 class="h4 mb-2">Made with Love</h3>
                     <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sobre-->
+<section class="page-section bg-primary" id="sobre">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="text-white mt-0">Sobre nós</h2>
+                <hr class="divider divider-light" />
+                <p class="text-white-75 mb-4">Nós somos um grupo de alunos da Univesp (Universidade Virtual do Estado de São Paulo) e esta iniciativa faz parte de um projeto proposto pela mesma. <br>
+                    Nosso site busca criar um espaço onde lojas de materiais escolares consigam anunciar seus produtos em nosso site, funcionando como uma espécie de marketplace totalmente gratuito. <br>
+                    O objetivo é ter um local de comparação de preços de materiais escolares que tenha muitas lojas cadastradas, mesmo aquelas que não possuem presença online, já que nosso site se encarrega de fazer esse trabalho. <br>
+                    Seja muito bem-vindo e compartilhe com seus amigos e com as lojas que você adquire materiais escolares!
+                </p>
+                <a class="btn btn-light btn-xl" href="#services">Vamos lá!</a>
             </div>
         </div>
     </div>

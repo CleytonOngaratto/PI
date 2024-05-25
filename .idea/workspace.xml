@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e14ade91-00ec-4c68-8906-889705f0db66" name="Changes" comment="feat: template do crud de produtos">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/ProductsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/model/UserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/model/UserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cadastre_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/personal_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/novo.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/novo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/controller/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/controller/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/controller/ProductsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/controller/ProductsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/model/UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/model/UserModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/products/novo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products/novo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,12 +98,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/cleyton/IdeaProjects/PI/src/main/resources/templates/bootstrap",
+    "last_opened_file_path": "/home/cleyton/IdeaProjects/PI/src/main/resources/static",
+    "settings.build.tools.auto.reload": "ALL",
     "settings.editor.selected.configurable": "reference.settings.project.maven.archetype.catalogs"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/bootstrap" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/products" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />

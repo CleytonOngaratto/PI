@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.util.IdGenerator;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.util.*;
 
 @Controller
@@ -64,15 +65,6 @@ public class ProductsController {
         }
     }
 
-//    @PostMapping("/products/{id}/modify")
-//    public String modify(@PathVariable Long id, Product product){
-//        Optional<Product> prod = repo.findById(id);
-//        if (prod.isPresent()) {
-//            return "products/edit";
-//        } else {
-//            return "redirect:/products"; // Or another error page
-//        }
-//    }
 
     @PostMapping("/products/{id}/update")
     public String update(@PathVariable Long id, @ModelAttribute Product product) {
@@ -82,91 +74,13 @@ public class ProductsController {
             prodToUpdate.setNome(product.getNome());
             prodToUpdate.setValor(product.getValor());
             prodToUpdate.setDescricao(product.getDescricao());
+            prodToUpdate.setBairro(product.getBairro());
+            prodToUpdate.setRuaEnumero(product.getRuaEnumero());
+            prodToUpdate.setNomeDaLoja(product.getNomeDaLoja());
             repo.save(prodToUpdate);
         }
         return "redirect:/products";
     }
-
-
-
-
-//
-//    @GetMapping("/getAllProdutos")
-//    public ResponseEntity<List<Product>> getAllProdutos() {
-//        try {
-//            List<Product> listaDeProdutos = new ArrayList<>();
-//            produtosRepository.findAll().forEach(listaDeProdutos::add);
-//
-//            if (listaDeProdutos.isEmpty()) {
-//                return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//            }
-//
-//            return new ResponseEntity<>(listaDeProdutos, HttpStatus.OK);
-//        } catch (Exception ex) {
-//            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-//        }
-//    }
-//
-//    @GetMapping("/getProdutoById/{id}")
-//    public ResponseEntity<Product> getProdutoById(@PathVariable Long id) {
-//        Optional<Product> produtoObj = produtosRepository.findById(id);
-//        if (produtoObj.isPresent()) {
-//            return new ResponseEntity<>(produtoObj.get(), HttpStatus.OK);
-//        } else {
-//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//        }
-//    }
-//
-//    @PostMapping("/addProduto")
-//    public ResponseEntity<Product> addBook(@RequestBody Product produto) {
-//        try {
-//            Product produtoObj = produtosRepository.save(produto);
-//            return new ResponseEntity<>(produtoObj, HttpStatus.CREATED);
-//        } catch (Exception e) {
-//            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-//        }
-//    }
-//
-//    @PostMapping("/updateProduto/{id}")
-//    public ResponseEntity<Product> updateBook(@PathVariable Long id, @RequestBody Product produto) {
-//        try {
-//            Optional<Product> produtoData = produtosRepository.findById(id);
-//            if (produtoData.isPresent()) {
-//                Product updatedProdutoData = produtoData.get();
-//                updatedProdutoData.setNome(produto.getNome());
-//                updatedProdutoData.setValor(produto.getValor());
-//                updatedProdutoData.setDescricao(produto.getDescricao());
-//
-//                Product produtoObj = produtosRepository.save(updatedProdutoData);
-//                return new ResponseEntity<>(produtoObj, HttpStatus.CREATED);
-//            }
-//
-//            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
-//        } catch (Exception e) {
-//            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-//        }
-//    }
-//
-//    @DeleteMapping("/deleteProdutoById/{id}")
-//    public ResponseEntity<HttpStatus> deleteProduto(@PathVariable Long id) {
-//        try {
-//            produtosRepository.deleteById(id);
-//            return new ResponseEntity<>(HttpStatus.OK);
-//        } catch (Exception e) {
-//            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-//        }
-//    }
-//    @DeleteMapping("/deleteAllProdutos")
-//    public ResponseEntity<HttpStatus> deleteAllProdutos() {
-//        try {
-//            produtosRepository.deleteAll();
-//            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-//        } catch (Exception e) {
-//            return new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
-//        }
-//    }
-//
-
 
 }
 
