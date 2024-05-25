@@ -4,7 +4,44 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e14ade91-00ec-4c68-8906-889705f0db66" name="Changes" comment="feat: template do crud de produtos">
+    <list default="true" id="e14ade91-00ec-4c68-8906-889705f0db66" name="Changes" comment="feat: add templates login e cadastro">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/bg-masthead.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/fullsize/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/fullsize/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/fullsize/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/fullsize/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/fullsize/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/fullsize/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/thumbnails/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/thumbnails/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/thumbnails/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/thumbnails/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/thumbnails/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/assets/img/portfolio/thumbnails/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/dist/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/controller/LoginController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/bg-masthead.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/fullsize/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/fullsize/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/fullsize/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/fullsize/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/fullsize/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/fullsize/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/thumbnails/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/thumbnails/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/thumbnails/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/thumbnails/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/thumbnails/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/assets/img/portfolio/thumbnails/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/static/dist/js/scripts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/templates/register/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/HomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/materialescolar/pi/controller/ProductsController.java" afterDir="false" />
@@ -22,8 +59,12 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/controller/ProductsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/controller/ProductsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/model/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/model/UserModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/materialescolar/pi/model/UserModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/cadastre_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/error_page.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/home/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/login/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/personal_page.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/products/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/products/novo.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/products/novo.html" afterDir="false" />
     </list>
@@ -165,11 +206,20 @@
       <option name="project" value="LOCAL" />
       <updated>1716424549842</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: add templates login e cadastro">
+      <option name="closed" value="true" />
+      <created>1716646315488</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716646315488</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: template do crud de produtos" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: template do crud de produtos" />
+    <MESSAGE value="feat: add templates login e cadastro" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add templates login e cadastro" />
   </component>
 </project>
